@@ -1,5 +1,5 @@
 FLAGS = -g
-#FLAGS = -O2
+FLAGS = -O2
 
 all: main test_graph test_maxflow
 

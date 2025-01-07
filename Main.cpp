@@ -138,6 +138,18 @@ private:
         auto stop_flow = high_resolution_clock::now();
         auto duration_flow = duration_cast<duration<double, std::milli>>(stop_flow - start_flow);
 
+        cout << "Nodos fuente: ";
+        for (int source : sources) {
+            cout << source << " ";
+        }
+        cout << endl;
+
+        cout << "Nodos sumidero: ";
+        for (int sink : sinks) {
+            cout << sink << " ";
+        }
+        cout << endl;
+
         cout << "Flujo Total: " << totalFlow << endl;
         cout << "Tiempo de cálculo del flujo máximo: " << duration_flow.count() << " [ms]" << endl;
     }
